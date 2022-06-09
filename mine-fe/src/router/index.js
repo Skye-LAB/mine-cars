@@ -6,6 +6,7 @@ import AdminVehicle from "../views/Admin/Vehicle.vue";
 import AdminBooking from "../views/Admin/Booking.vue";
 import AdminBookingCreate from "../views/Admin/BookingCreate.vue";
 import AdminVehicleCreate from "../views/Admin/VehicleCreate.vue";
+import AdminUsageEdit from "../views/Admin/UsageEdit.vue";
 
 import AgreingBooking from "../views/Agreing/Booking.vue";
 
@@ -50,6 +51,11 @@ const routes = [
     path: "/admin/vehicles/create",
     name: "admin-vehicle-create",
     component: AdminVehicleCreate,
+  },
+  {
+    path: "/admin/vehicle/usage/edit/:id",
+    name: "admin-edit-usage",
+    component: AdminUsageEdit,
   },
   {
     path: "/agreing/bookings/:id",

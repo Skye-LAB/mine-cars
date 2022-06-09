@@ -30,6 +30,7 @@ app.get("/", (req, res) => {
 require("./app/routes/user.route")(app);
 require("./app/routes/vehicle.route")(app);
 require("./app/routes/booking.route")(app);
+require("./app/routes/usage.route")(app);
 
 const PORT = 5000;
 app.listen(PORT, () => {

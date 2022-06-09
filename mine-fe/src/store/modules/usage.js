@@ -4,21 +4,25 @@ import router from "../../router";
 export default {
   namespaced: true,
   state: {
-    vehicles: [],
+    usage: {},
   },
   mutations: {
-    setVehicles(state, vehicles) {
-      state.vehicles = vehicles;
+    setUsage(state, usage) {
+      state.usage = usage;
     },
   },
   actions: {
-    fetchVehicles(ctx) {
-      axios.get("/api/vehicles/").then((res) => {
-        ctx.commit("setVehicles", res.data);
+    fetchUsage(ctx, payload) {
+      axios.get(`/api/usages/${payload.id}`, {
+        headers: {
+          role: payload.role
+        }
+      }).then((res) => {
+        ctx.commit("setUsage", res.data);
       });
     },
-    createVehicle(ctx, payload) {
-      axios.post("/api/vehicles/", payload, {
+    updateUsage(ctx, payload) {
+      axios.post(`/api/usages/${payload.id}`, payload, {
         headers: {
           role: JSON.parse(localStorage.getItem('user')).role
         }

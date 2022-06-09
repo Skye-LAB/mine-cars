@@ -17,6 +17,7 @@
             <th scope="col">Total Jarak</th>
             <th scope="col">Jadwal Service</th>
             <th scope="col">Service Terakhir</th>
+            <th scope="col">Aksi</th>
           </tr>
         </thead>
         <tbody>
@@ -29,6 +30,9 @@
             <td>{{ vehicle.usage.jarakTotal }}</td>
             <td>{{ vehicle.usage.serviceHari }}</td>
             <td>{{ vehicle.usage.serviceTerakhir }}</td>
+            <td>
+              <router-link :to="`/admin/vehicle/usage/edit/${vehicle.usage._id}`">Edit Usage</router-link>
+            </td>
           </tr>
         </tbody>
       </table>
