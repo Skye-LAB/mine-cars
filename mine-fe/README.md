@@ -10,10 +10,21 @@ yarn install
 yarn serve
 ```
 
-### Compiles and minifies for production
-```
-yarn build
-```
+## Account
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Terdapat tiga `role` dalam aplikasi ini. yaitu `0: Employee`, `1: Agreing`, `2: Admin`
+
+### Employee
+
+Email: `salty@gmail.com`
+Password: `salty123`
+
+### Agreing
+
+Email: `nacty@gmail.com`
+Password: `nacty123`
+
+### Admin
+
+Email: `bayu@gmail.com`
+Password: `bayu123`
