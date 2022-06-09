@@ -1,0 +1,26 @@
+{
+  "name": "blog-corner-back-end",
+  "version": "0.1.0",
+  "private": true,
+  "main": "app.js",
+  "scripts": {
+    "start-server": "nodemon app.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.1",
+    "joi": "^17.6.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}
